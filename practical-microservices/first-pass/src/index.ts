@@ -1,6 +1,7 @@
 import createExpressApp from "./app/express";
 import createConfig from "./config";
 import { env } from "./env";
+import camelCaseKeys from "camelcase-keys";
 
 export const config = createConfig(env);
 export const app = createExpressApp(config, env);

@@ -1,7 +1,7 @@
 import express from "express";
 import { join } from "path";
 import { Env } from "../../env";
-import type { Config } from "../../config";
+import { Config } from "../types/config";
 
 import mountMiddleware from './mount-middleware';
 import mountRoutes from './mount-routes';

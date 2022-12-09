@@ -30,11 +30,13 @@ export type Env = {
     env: string,
     port: number,
     version: string
+    databaseUrl: string
 }
 
 export const env: Env = {
     appName: requireFromEnv('APP_NAME'),
     env: requireFromEnv('NODE_ENV'),
     port: parseInt(requireFromEnv('PORT'), 10),
+    databaseUrl: requireFromEnv('DATABASE_URL'),
     version: packageJson.version
 }
